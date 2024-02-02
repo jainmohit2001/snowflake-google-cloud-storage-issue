@@ -2,12 +2,13 @@
 
 This repo contains the minimal repro for https://github.com/snowflakedb/snowflake-connector-nodejs/issues/759
 
-## Steps to reproduce
+## Steps to reproduces
 
 1. Install Next.js
 2. Add snowflake connector
-3. Create a server action [actions.ts](src/app//actions.ts)
-4. Import the server action in a Client component. [page.tsx](src/app/page.tsx)
+3. Setup `.env.local` file. See [.env.template](.env.template)
+4. Create a server action [actions.ts](src/app//actions.ts)
+5. Import the server action in a Client component. [page.tsx](src/app/page.tsx)
 
 You shall see the following error in the console:
 
